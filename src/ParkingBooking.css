@@ -1,0 +1,103 @@
+.container-parking {
+    display: flex;
+    flex-direction: row !important;
+   
+    padding: 20px;
+  }
+  
+  .sidebar {
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    
+    border-radius: 10px;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 15px;
+  }
+  
+  .image-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .image-item {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ddd;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  .image-item:hover {
+    background-color: #bbb;
+  }
+  
+  .image-item.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .pie-chart {
+    margin-top: 20px;
+  }
+  
+  .parking-slots {
+    width: 65%;
+    padding: 20px;
+    margin-left: 100px;
+  }
+  
+  .slots-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .parking-slot {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .parking-slot:hover {
+    transform: scale(1.05);
+  }
+  
+  .parking-slot.vacant {
+    background-color: #7cfc00;
+  }
+  
+  .parking-slot.booked {
+    background-color: #f44336;
+  }
+  
+  .parking-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .parking-status p {
+    margin: 0;
+    font-weight: bold;
+  
+  /* Bootstrap Override for Buttons */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+}
